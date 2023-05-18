@@ -26,3 +26,39 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+.main-box{
+    width: 400px;
+    height: 70vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+}
+
+.box-img-area{
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+    background-image: url("./img/image-equilibrium.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-img-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: hsla(178, 100%, 50%, 0.411);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.box-img-area:hover .box-img-shadow{
+    opacity: 1;
+}
